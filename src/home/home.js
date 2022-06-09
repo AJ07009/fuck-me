@@ -1,6 +1,34 @@
 import React from "react";
 import "./src/css/home.css"
 
+function Header (){
+    return (
+        <div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="btn" >Login</button>
+        </nav>
+
+        <div class="content">
+            <h4>We are</h4>
+            <h1>Cash<span>UwU</span></h1>
+            <h3>Snap Once. Save More.
+            </h3>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email"/>
+                    <input type="submit" name="submit" value="Lets Start"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    )
+}
+
 function About(){
     return (
         <div>
@@ -54,7 +82,6 @@ function HomeHero(){
 function HomeFooter(){
     return (
         <footer>
-            <p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p> -->
             <div class="social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -67,6 +94,7 @@ export default function Home(){
     return (
 
         <body>
+            <Header />
             <HomeHero />
             <About />
             <GetStarted />
