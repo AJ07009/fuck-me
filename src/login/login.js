@@ -5,7 +5,7 @@ import "./src/css/login.css"
 function LoginHeader(){
     return (
         <title>CashUwU Login</title>
-    )
+    )   
 }
 
 function SocialContainer(){
